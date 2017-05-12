@@ -33,7 +33,13 @@ public class Tableau_dim2 {
                     nbbl++; 
                 }
             }
-                    image[x][y]=image[x][y]+30;
+         } 
+         System.out.println("Nombre_de_points_blancs:_"+nbbl);
+         System.out.println("Pourcentage_de_points_blancs_:"+ ((nbbl*100)/(largeur*hauteur))+"%"); 
+         for(x=0; x<largeur; x++){
+             for(y=0; y<hauteur; y++){
+               if (image[x][y]<=225){
+                 image[x][y]=image[x][y]+30;
                 }
                 else{ 
                     image[x][y]=225;
